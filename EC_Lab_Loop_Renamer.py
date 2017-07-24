@@ -1,0 +1,1 @@
+directory = '/Users/st659/Google Drive/Ecoli 50uM MB 1-12-2016'
