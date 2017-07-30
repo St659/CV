@@ -128,7 +128,7 @@ class CVReader():
                 reverse_list.append(r)
 
 
-
+        print(forward_list)
         voltage_forward = np.linspace(forward_list[0][0][0], forward_list[0][-1][0], 1000)
         voltage_reverse = np.linspace(reverse_list[0][0][0], reverse_list[0][-1][0], 1000)
         for data in forward_list:

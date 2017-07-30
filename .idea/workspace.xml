@@ -21,18 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Res_ITO_17-5-17.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TAP_Report/Res_ITO_17-5-17.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="29" column="124" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MethBlue_Suscept_12-09.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TAP_Report/MethBlue_Suscept_12-09.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,8 +36,8 @@
       <file leaf-file-name="SinITO17-7-17.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SINITO_Grating/SinITO17-7-17.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -57,13 +45,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2min_etch.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2min_etch.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SINITO_Grating/2min_etch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+            <state relative-caret-position="302">
+              <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SPV_Reader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SPV_Reader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="26" column="79" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,18 +99,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resazurin Bulk 18-1-17.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resazurin Bulk 18-1-17.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="115" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Resazurin_growth.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TAP_Report/Resazurin_growth.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EC_Lab_CVReader.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EC_Lab_CVReader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EC_Lab_CVReader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+            <state relative-caret-position="1256">
+              <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -169,7 +157,6 @@
         <option value="$PROJECT_DIR$/Jenn_bulk_struc_trumpet.py" />
         <option value="$PROJECT_DIR$/jenn_raw_cv.py" />
         <option value="$PROJECT_DIR$/Jenn_rough_unrough.py" />
-        <option value="$PROJECT_DIR$/EC_Lab_CVReader.py" />
         <option value="$PROJECT_DIR$/TAP_Report/ITO_MB_17-5-17.py" />
         <option value="$PROJECT_DIR$/TAP_Report/Data/Res_ITO_17-5-17.py" />
         <option value="$PROJECT_DIR$/TAP_Report/Res_ITO_17-5-17.py" />
@@ -177,12 +164,15 @@
         <option value="$PROJECT_DIR$/TAP_Report/Resazurin_growth.py" />
         <option value="$PROJECT_DIR$/EIS_Reader.py" />
         <option value="$PROJECT_DIR$/SINITO_Grating/SinITO17-7-17.py" />
+        <option value="$PROJECT_DIR$/SINITO_Grating/SPV_Reader.py" />
+        <option value="$PROJECT_DIR$/SPV_Reader.py" />
         <option value="$PROJECT_DIR$/SINITO_Grating/2min_etch.py" />
+        <option value="$PROJECT_DIR$/EC_Lab_CVReader.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -212,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,6 +236,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -257,6 +247,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Git\CV" />
       <recent name="E:\Git\CV\TAP_Report" />
     </key>
   </component>
@@ -274,40 +265,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="CV" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TAP_Report/ITO_MB_17-5-17.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MethBlue_Suscept_12-09" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TAP_Report" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CV" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TAP_Report/MethBlue_Suscept_12-09.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Resazurin_growth" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TAP_Report" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CV" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TAP_Report/Resazurin_growth.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -344,6 +301,50 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SINITO_Grating/2min_etch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in SPV_Reader" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SINITO_Grating" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CV" />
+      <option name="SCRIPT_NAME" value="E:\Git\CV\SPV_Reader.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in SPV_Reader (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CV" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SPV_Reader.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -482,18 +483,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ITO_MB_17-5-17" />
-      <item index="1" class="java.lang.String" itemvalue="Python.MethBlue_Suscept_12-09" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Resazurin_growth" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SinITO17-7-17" />
-      <item index="4" class="java.lang.String" itemvalue="Python.2min_etch" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SinITO17-7-17" />
+      <item index="2" class="java.lang.String" itemvalue="Python.2min_etch" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in SPV_Reader" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in SPV_Reader (1)" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.2min_etch" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SinITO17-7-17" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ITO_MB_17-5-17" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Resazurin_growth" />
-        <item index="4" class="java.lang.String" itemvalue="Python.MethBlue_Suscept_12-09" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in SPV_Reader (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in SPV_Reader" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SinITO17-7-17" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ITO_MB_17-5-17" />
       </list>
     </recent_temporary>
   </component>
@@ -514,39 +515,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 00m 00s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 27m 35s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 01m 13s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 27m 54s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 02m 31s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 28m 06s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 02m 48s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 28m 23s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 03m 11s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 33m 45s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 03m 23s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 35m 21s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 06m 39s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 41m 49s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 07m 20s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 42m 59s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 07m 47s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 45m 02s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_EC_Lab_CV_Reader - 2017.04.08 at 14h 08m 37s.xml">
-      <configuration name="Unittests in EC Lab CV Reader" configurationId="tests" />
+    <history-entry file="Unittests_in_SPV_Reader_(1) - 2017.07.30 at 18h 45m 28s.xml">
+      <configuration name="Unittests in SPV_Reader (1)" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -554,7 +555,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -584,20 +585,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/On Chip Reference Measurement 28-11-16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cell Ref Test 02-12-16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Looped_CV_Data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -868,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,9 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="29" column="124" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,9 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="115" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,29 +882,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EC_Lab_CVReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EIS_Reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TAP_Report/MethBlue_Suscept_12-09.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,10 +906,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/Python/Lib/site-packages/numpy/core/_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SINITO_Grating/SinITO17-7-17.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPV_Reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="26" column="79" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TAP_Report/MethBlue_Suscept_12-09.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
@@ -956,11 +945,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SINITO_Grating/2min_etch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+        <state relative-caret-position="302">
+          <caret line="65" column="3" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EC_Lab_CVReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1256">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
