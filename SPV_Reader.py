@@ -1,12 +1,13 @@
 import unittest
 import numpy as np
+import scipy.stats as stats
 
 class SPV_Reader():
 
     def __init__(self, file):
         file = file
         self.header = 0
-        with open(file) as f:
+        with open(file, encoding='utf-8', errors='ignore') as f:
             read_data = f.readlines()
             for line in read_data:
                 if 'Nb header' in line:
@@ -25,6 +26,16 @@ class SPV_Reader():
         voltage_min = np.round(data[12][0], decimals=1)
         voltage_max = np.round(data[12][-1], decimals=1)
         self.voltage = np.linspace(voltage_min, voltage_max, len(self.current))
+        self.normalised_current = self.normalise_current(self.current, self.voltage)
+
+    def normalise_current(self, current, voltage):
+
+        slope,intercept,r,p,s = stats.linregress([voltage[0], voltage[-1]], [current[0], current[-1]])
+        line_fit = np.apply_along_axis(self.linear_fit,0, voltage, slope, intercept)
+        return np.subtract(current,line_fit)
+
+    def linear_fit(self,x,slope,intercept):
+        return slope*x + intercept
 
 
 

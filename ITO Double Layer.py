@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from Meth_blue_06_09 import get_data_paths
-from EIS_Reader import EISReader
+from EIS_Reader import EISReader, EIS_plot_labels
 import os
 
 directory = '/Users/st659/Google Drive/ITO Impedance'
@@ -10,19 +10,20 @@ figure = plt.figure()
 ax = figure.add_subplot(111)
 ax2 = ax.twinx()
 legends = ['APTES 100mM PB','APTES 10mM PB','100mM PB','10mM PB']
+legends_lim = ['APTES 10mM PB','10mM PB']
 colour = ['r','g', 'b', 'k']
-for file, col, leg in zip(paths,colour, legends):
+colour_lim = ['r','b']
+for file, col, leg in zip([paths[1],paths[3]],colour_lim, legends_lim):
     reader = EISReader(file)
     print(file)
     ax.loglog(reader.eis.frequency, reader.eis.magnitude, color=col)
     ax2.semilogx(reader.eis.frequency, reader.eis.phase, linestyle='--', color=col, label=leg)
     print(len(reader.eis.frequency))
 
-ax.set_xlabel('Frequency (Hz)')
-ax.set_ylabel('Mag ($\Omega$)')
-ax2.set_ylabel('Phase (degrees)')
-ax.legend(legends,loc=7)
+EIS_plot_labels(ax,ax2)
 
-plt.savefig(os.path.join(directory,'ITO Char.png'), dpi=300)
+ax.legend(legends_lim,loc=7)
+
+#plt.savefig(os.path.join(directory,'ITO Char.png'), dpi=300)
 
 plt.show()

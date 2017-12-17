@@ -29,6 +29,6 @@ bulkshift = 6.93 -6.34
 print('pH Bulk:' + str(bulkshift))
 ax.set_ylabel('Current (mA)')
 ax.set_xlabel('Voltage vs Ag/AgCl (V)')
-plt.savefig(os.path.join(directory,'metblue.png'), dpi=300)
+#plt.savefig(os.path.join(directory,'metblue.png'), dpi=300)
 
 plt.show()

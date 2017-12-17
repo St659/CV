@@ -8,15 +8,23 @@ def num_sort(name, split_loc):
     num = filename.split('_')[split_loc]
     return num
 
+def num_sort_loop(name):
+    loop = name.split('_')[-1]
+    loop_only = loop.split('.')[0]
+    num = loop_only[4:]
+    print(num)
+    return num
 
-cv_directory = 'E:\\Chrome Download\\2min etch\\2min etch\\Electrochemistry\\CV\\MB 14DF Grating\\Methylene Blue'
-eis_directory = 'E:\\Chrome Download\\2min etch\\2min etch\\Electrochemistry\\EIS'
-mb_file = 'E:\\Chrome Download\\2min etch\\2min etch\\Electrochemistry\\SPV\\Methylene Blue\\100uM MB 100mM PB square wave 2mv step 50mV 80hz_C01.mpt'
-pb_spv_directory = 'E:\\Chrome Download\\2min etch\\2min etch\\Electrochemistry\\SPV\\Square Wave Loop\\Phosphate Buffer'
-mb_spv_directory = 'E:\\Chrome Download\\2min etch\\2min etch\\Electrochemistry\\SPV\\Square Wave Loop\\Methylene Blue'
+plt.style.use(['seaborn-white', 'seaborn-notebook'])
 
-diaz_eis_directory = 'E:\\Chrome Download\\2min etch\\2min etch\\Electrochemistry\\Diazonium 3\\CV'
-diaz_cv_directory = 'E:\\Chrome Download\\2min etch\\2min etch\\Electrochemistry\\Diazonium 3\\EIS'
+cv_directory = '/Users/st659/Google Drive/SiN ITO Grating ITO Thickness Test/2min etch/Electrochemistry/CV/MB 14DF Grating/Methylene Blue'
+eis_directory = '/Users/st659/Google Drive/SiN ITO Grating ITO Thickness Test/2min etch/Electrochemistry/EIS'
+mb_file = '/Users/st659/Google Drive/SiN ITO Grating ITO Thickness Test/2min etch/Electrochemistry/SPV/Methylene Blue/100uM MB 100mM PB square wave 2mv step 50mV 80hz_C01.mpt'
+pb_spv_directory = '/Users/st659/Google Drive/SiN ITO Grating ITO Thickness Test/2min etch/Electrochemistry/SPV/Square Wave Loop/Phosphate Buffer'
+mb_spv_directory = '/Users/st659/Google Drive/SiN ITO Grating ITO Thickness Test/2min etch/Electrochemistry/SPV/Square Wave Loop/Methylene Blue'
+
+diaz_eis_directory = '/Users/st659/Google Drive/SiN ITO Grating ITO Thickness Test/2min etch/Electrochemistry/Diazonium 3/EIS'
+diaz_cv_directory = '/Users/st659/Google Drive/SiN ITO Grating ITO Thickness Test/2min etch/Electrochemistry/Diazonium 3/CV'
 
 
 
@@ -29,8 +37,14 @@ mb_spv_paths = get_data_paths(mb_spv_directory)
 diaz_cv_paths = get_data_paths(diaz_cv_directory)
 diaz_eis_paths = get_data_paths(diaz_eis_directory)
 
+
+
 eis_paths.sort(key= lambda name: num_sort(name, 0))
 cv_paths.sort(key= lambda name: num_sort(name,1))
+
+diaz_cv_paths.sort(key=num_sort_loop)
+diaz_eis_paths.sort(key=num_sort_loop)
+print(diaz_cv_paths)
 eis_legends = ['100 mM', '10 mM', '1 mM', '100 $\mu$M', '10 $\mu$M', '1 $\mu$M']
 fig, ax2 = plt.subplots()
 fig2, ax = plt.subplots()
@@ -46,25 +60,29 @@ for eis_path in eis_paths:
     ax3.semilogx(eis_reader.eis.frequency, eis_reader.eis.phase, linestyle='--')
 scan_rates = list()
 for cv_path in cv_paths:
-    print(cv_path)
     cv_reader = CVReader(cv_path, set_cycle=2)
     ax.plot(cv_reader.voltage, cv_reader.current)
-    print(cv_reader.scan_rate)
     scan_rates.append(str(cv_reader.scan_rate) + ' mV/s')
 
+diaz_leg = 1
+diaz_legend = list()
 for cv_path, eis_path in zip(diaz_cv_paths, diaz_eis_paths):
-    cv_reader = CVReader(cv_path, set_cycle=2)
-    eis_reader = EISReader(eis_path, set_cycle=2)
+    diaz_legend.append(diaz_leg)
+    diaz_leg +=1
+    cv_reader = CVReader(cv_path)
+    eis_reader = EISReader(eis_path)
     ax5.plot(cv_reader.voltage, cv_reader.current)
     ax6.loglog(eis_reader.eis.frequency, eis_reader.eis.magnitude)
-    ax7.semilogx(eis_reader.eis.frequency, eis_reader.eis.phase)
+    ax7.semilogx(eis_reader.eis.frequency, eis_reader.eis.phase, linestyle='--')
+
 
 ax5.set_xlabel('Voltage (V vs Ag/AgCl)')
+ax5.legend(diaz_legend, loc='lower right')
 ax5.set_ylabel('Current (mA)')
 ax6.set_xlabel('Frequency (Hz)')
 ax6.set_ylabel('Magnitude ($\Omega$)')
 ax7.set_ylabel('Phase (Degrees)')
-
+fig4.tight_layout()
 pb_current = list()
 mb_current = list()
 spv_voltage =0

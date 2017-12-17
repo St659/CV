@@ -40,6 +40,7 @@ class CVReader():
             self.peak_forward_voltage = forward_voltage[np.argmax(self.forward_current_mean)]
             self.peak_reverse_voltage = reverse_voltage[np.argmin(self.reverse_current_mean)]
             self.peak_current = np.max(self.current)
+            self.get_max_voltages_between_limits(self.forward_voltage[0],self.forward_voltage[-1])
             file.close()
 
     def calculate_fwhm(self, voltage, current):
@@ -48,7 +49,7 @@ class CVReader():
         try:
             r1, r2 = spline.roots()  # find the roots
             fwhm = [r1, r2]
-            print("FWHM:" + str(fwhm))
+            print("FWHM:" + str((fwhm[1]-fwhm[0])*1000) + 'mV')
             return fwhm
         except ValueError:
             print('Oh dear spline went wrong')
@@ -67,9 +68,7 @@ class CVReader():
     def gaus(self,x, a, x0, sigma):
         return a * exp(-(x - x0) ** 2 / (2 * sigma ** 2))
 
-    def get_cv_data(self, file_lines, cycle =2):
-
-
+    def get_cv_data(self, file_lines, cycle =0):
         current_forward = list()
         reverse = list()
         voltage_reverse = list()
@@ -77,8 +76,10 @@ class CVReader():
         for line in file_lines:
             sl = line.split()
 
-
+            if not cycle:
+                cycle = int(float(sl[9]))
             if int(float(sl[9])) == cycle:
+
                 if int(float(sl[1])) == 1:
 
                     forward.append([float(sl[7]), float(sl[8])])
@@ -128,7 +129,7 @@ class CVReader():
                 reverse_list.append(r)
 
 
-        print(forward_list)
+        #print(forward_list)
         voltage_forward = np.linspace(forward_list[0][0][0], forward_list[0][-1][0], 1000)
         voltage_reverse = np.linspace(reverse_list[0][0][0], reverse_list[0][-1][0], 1000)
         for data in forward_list:
@@ -190,6 +191,10 @@ def get_data_paths(directory):
 
     print(paths)
     return paths
+
+def cv_plot_labels(cv_plot):
+    cv_plot.set_xlabel('Voltage (V vs Ag/AgCl)')
+    cv_plot.set_ylabel('Current  (mA)')
 
 
 class CVReaderTest(unittest.TestCase):
