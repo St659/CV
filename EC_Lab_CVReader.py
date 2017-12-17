@@ -5,6 +5,7 @@ import os
 from scipy import asarray as ar,exp
 from scipy.optimize import curve_fit
 from scipy.interpolate import UnivariateSpline
+import matplotlib.pyplot as plt
 
 class CVReader():
     def __init__(self, filename, set_cycle = 0):
@@ -78,6 +79,7 @@ class CVReader():
 
             if not cycle:
                 cycle = int(float(sl[9]))
+
             if int(float(sl[9])) == cycle:
 
                 if int(float(sl[1])) == 1:
@@ -128,8 +130,8 @@ class CVReader():
                 forward_list.append(f)
                 reverse_list.append(r)
 
-
         #print(forward_list)
+
         voltage_forward = np.linspace(forward_list[0][0][0], forward_list[0][-1][0], 1000)
         voltage_reverse = np.linspace(reverse_list[0][0][0], reverse_list[0][-1][0], 1000)
         for data in forward_list:
@@ -182,19 +184,42 @@ class CVReader():
 
 def get_data_paths(directory):
     filenames = os.listdir(directory)
-    print(filenames)
     paths = list()
     for name in filenames:
         if '.mpt' in name:
             new_name = os.path.join(directory, name)
             paths.append(new_name)
-
     print(paths)
     return paths
 
 def cv_plot_labels(cv_plot):
     cv_plot.set_xlabel('Voltage (V vs Ag/AgCl)')
     cv_plot.set_ylabel('Current  (mA)')
+
+
+class CV_Plotter():
+    def __init__(self, directory):
+
+        fig, cv_plot = plt.subplots()
+        cv_paths = get_data_paths(directory)
+        scan_rates = list()
+
+        self._plot = plt
+
+        for cv_path in cv_paths:
+            cv_reader = CVReader(cv_path, set_cycle=2)
+            cv_plot.plot(cv_reader.voltage, cv_reader.current)
+            scan_rates.append(str(cv_reader.scan_rate) + ' mV/s')
+        plt.show()
+
+    def get_data_paths(self,directory):
+        filenames = os.listdir(directory)
+        paths = list()
+        for name in filenames:
+            if '.mpt' in name:
+                new_name = os.path.join(directory, name)
+                paths.append(new_name)
+        return paths
 
 
 class CVReaderTest(unittest.TestCase):
