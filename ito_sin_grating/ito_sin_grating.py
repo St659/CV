@@ -1,6 +1,6 @@
 from SPV_Reader import SPV_Reader
 from EC_Lab_CVReader import CVReader,get_data_paths, cv_plot_labels
-from EIS_Reader import EISReader, EIS_plot_labels
+from EIS_Reader import EISReader
 from matplotlib import pyplot as plt
 
 plt.style.use(['seaborn-white', 'seaborn-notebook'])
@@ -20,10 +20,11 @@ fig2, eis_plot_mag = plt.subplots()
 eis_plot_phase = eis_plot_mag.twinx()
 fig3, cv_plot = plt.subplots()
 
-for path in spv_paths:
-    spv_reader = SPV_Reader(path)
-    spv_plot.plot(spv_reader.voltage, spv_reader.current)
-
+# for path in spv_paths:
+#     spv_reader = SPV_Reader(path)
+#     spv_plot.plot(spv_reader.voltage, spv_reader.current)
+spv_reader = SPV_Reader(spv_paths[1])
+spv_plot.plot(spv_reader.voltage, spv_reader.current)
 
 
 spv_plot.set_xlabel('Voltage (V vs Ag/AgCl)')
@@ -34,7 +35,9 @@ for path in eis_paths:
     eis_reader = EISReader(path)
     eis_plot_mag.loglog(eis_reader.eis.frequency, eis_reader.eis.magnitude)
     eis_plot_phase.semilogx(eis_reader.eis.frequency, eis_reader.eis.phase, linestyle='--')
-EIS_plot_labels(eis_plot_mag,eis_plot_phase)
+eis_plot_mag.set_xlabel('Frequency (Hz)')
+eis_plot_mag.set_ylabel('|Z| ($\Omega$)')
+eis_plot_phase.set_ylabel('$\\angle$ ($\degree$)')
 
 for path in cv_paths:
     cv_reader = CVReader(path, set_cycle=2)

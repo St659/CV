@@ -3,8 +3,9 @@ from EC_Lab_CVReader import get_data_paths
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy import stats as sts
-spv_directory = 'E:\\Chrome Download\\todays data\\todays data\\Nile blue surface ph'
+spv_directory = '/Users/st659/Google Drive/todays data/Nile blue surface ph'
 spv_paths = get_data_paths(spv_directory)
+print(spv_paths)
 
 fig, spv_plot = plt.subplots()
 
